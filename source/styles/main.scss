@@ -1,7 +1,14 @@
 $color-1: #21c2f8;
-$color-2: #ffffff;
+$color-2: #fff;
 $color-3: #222533;
-
+$color-4: #f39705;
+$color-5: #e25611;
+$color-6: #9a2c4a;
+$color-7: #97c200;
+$color-8: #3d4c53;
+$color-9: #62a783;
+$color-10: #f82f54;
+$color-11: #8fc567;
 * {
   box-sizing: border-box;
   padding: 0;
@@ -52,9 +59,6 @@ body {
     font-size: 36px;
     padding: 27px 102px 27px 103px;
   }
-  &:hover {
-    background-color: $color-3;
-  }
   &.round {
     &-3 {
       border-radius: 3px;
@@ -68,5 +72,44 @@ body {
     &-20 {
       border-radius: 20px;
     }
+  }
+  &.bg-color {
+    &-1 {
+      background-color: $color-1;
+    }
+
+    &-2 {
+      background-color: $color-2;
+    }
+    &-3 {
+      background-color: $color-3;
+    }
+    &-4 {
+      background-color: $color-4;
+    }
+    &-5 {
+      background-color: $color-5;
+    }
+    &-6 {
+      background-color: $color-6;
+    }
+    &-7 {
+      background-color: $color-7;
+    }
+    &-8 {
+      background-color: $color-8;
+    }
+    &-9 {
+      background-color: $color-9;
+    }
+    &-10 {
+      background-color: $color-10;
+    }
+    &-11 {
+      background-color: $color-11;
+    }
+  }
+  &:hover {
+    background-color: $color-3;
   }
 }
