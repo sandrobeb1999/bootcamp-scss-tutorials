@@ -1,115 +1,133 @@
-$color-1: #21c2f8;
-$color-2: #fff;
+$color-1: #21C2F8;
+$color-2: #FFFFFF;
 $color-3: #222533;
-$color-4: #f39705;
-$color-5: #e25611;
-$color-6: #9a2c4a;
-$color-7: #97c200;
-$color-8: #3d4c53;
-$color-9: #62a783;
-$color-10: #f82f54;
-$color-11: #8fc567;
+$color-4: #F39705;
+$color-5: #E25611;
+$color-6: #9A2C4A;
+$color-7: #97C200;
+$color-8: #3D4C53;
+$color-9: #62A783;
+$color-10: #F82F54;
+$color-11: #8FC567;
+
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 
 .row {
-  display: flex;
-  align-items: flex-end;
-  margin-top: 30px;
-  justify-content: center;
-  .btn {
-    margin-right: 30px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 30px;
+
+    .btn {
+        margin-right: 30px;
+        padding: 11px 37px 10.8px 37.1px;
+        border: none;
+        background-color: $color-1;
+        color: $color-2;
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        font-weight: 900;
+        letter-spacing: .1px;
+        text-decoration: none;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &.medium {
+            padding: 14px 46px;
+            font-size: 18px;
+        }
+
+        &.large {
+            padding: 23px 93px 23px 94px;
+            font-size: 26px;
+        }
+
+        &.x-large {
+            padding: 27px 102px 27px 103px;
+            font-size: 36px;
+        }
+
+        &.round {
+
+            &-3 {
+                border-radius: 3px;
+            }
+
+            &-7 {
+                border-radius: 7px;
+            }
+
+            &-12 {
+                border-radius: 12px;
+            }
+
+            &-20 {
+                border-radius: 20px;
+            }
+        }
+
+        &.bg-color {
+
+            &-1 {
+                background-color: $color-1;
+            }
+
+            &-2 {
+                background-color: $color-2;
+            }
+
+            &-3 {
+                background-color: $color-3;
+            }
+
+            &-4 {
+                background-color: $color-4;
+            }
+
+            &-5 {
+                background-color: $color-5;
+            }
+
+            &-6 {
+                background-color: $color-6;
+            }
+
+            &-7 {
+                background-color: $color-7;
+            }
+
+            &-8 {
+                background-color: $color-8;
+            }
+
+            &-9 {
+                background-color: $color-9;
+            }
+
+            &-10 {
+                background-color: $color-10;
+            }
+
+            &-11 {
+                background-color: $color-11;
+            }
+        }
+
+        &:hover {
+            background-color: $color-3;
+        }
+    }
 
     &:last-child {
-      margin-right: 0;
+        margin-right: 0;
     }
-  }
-}
-
-.btn {
-  background-color: $color-1;
-  color: $color-2;
-  text-decoration: none;
-  font-family: "Lato";
-  font-weight: 900;
-  font-size: 14px;
-  padding: 11px 37px 10.8px 37.1px;
-  text-transform: uppercase;
-  letter-spacing: 0.1px;
-  border: none;
-  cursor: pointer;
-  &.medium {
-    font-size: 18px;
-    padding: 14px 46px;
-  }
-
-  &.large {
-    font-size: 26px;
-    padding: 23px 93px 23px 94px;
-  }
-  &.x-large {
-    font-size: 36px;
-    padding: 27px 102px 27px 103px;
-  }
-  &.round {
-    &-3 {
-      border-radius: 3px;
-    }
-    &-7 {
-      border-radius: 7px;
-    }
-    &-12 {
-      border-radius: 12px;
-    }
-    &-20 {
-      border-radius: 20px;
-    }
-  }
-  &.bg-color {
-    &-1 {
-      background-color: $color-1;
-    }
-
-    &-2 {
-      background-color: $color-2;
-    }
-    &-3 {
-      background-color: $color-3;
-    }
-    &-4 {
-      background-color: $color-4;
-    }
-    &-5 {
-      background-color: $color-5;
-    }
-    &-6 {
-      background-color: $color-6;
-    }
-    &-7 {
-      background-color: $color-7;
-    }
-    &-8 {
-      background-color: $color-8;
-    }
-    &-9 {
-      background-color: $color-9;
-    }
-    &-10 {
-      background-color: $color-10;
-    }
-    &-11 {
-      background-color: $color-11;
-    }
-  }
-  &:hover {
-    background-color: $color-3;
-  }
 }
