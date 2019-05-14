@@ -3,8 +3,8 @@
 .btn {
     margin-right: 30px;
     border: none;
-    background-color: $color-1;
-    color: $color-2;
+    background-color: color(1);
+    color: color(2);
     font-family: 'Lato', sans-serif;
 
     @include size(14px, 11px, 37px, 10.8px, 37.1px);
@@ -40,53 +40,15 @@
     }
 
     &.bg-color {
+        @each $index, $color in $palette {
 
-        &-1 {
-            background-color: $color-1;
-        }
-
-        &-2 {
-            background-color: $color-2;
-        }
-
-        &-3 {
-            background-color: $color-3;
-        }
-
-        &-4 {
-            background-color: $color-4;
-        }
-
-        &-5 {
-            background-color: $color-5;
-        }
-
-        &-6 {
-            background-color: $color-6;
-        }
-
-        &-7 {
-            background-color: $color-7;
-        }
-
-        &-8 {
-            background-color: $color-8;
-        }
-
-        &-9 {
-            background-color: $color-9;
-        }
-
-        &-10 {
-            background-color: $color-10;
-        }
-
-        &-11 {
-            background-color: $color-11;
+            &-#{$index} {
+                background-color: $color;
+            }
         }
     }
 
     &:hover {
-        background-color: $color-3;
+        background-color: color(3);
     }
 }
